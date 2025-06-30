@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header><!--Contenido de encabezado:titulo, navegacion, redes, se repite en todos los archivos-->
+       <h1>Corporación Bethel</h1>
+       <nav><!--Encierra el centro de navegacion principal de un archivo(menu de navegacion)-->
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Colaborador</a></li>
+            </ul>
+       </nav>
+    </header>
+
+    <main>
+        <img src="../assets/pexels-tiger-lily-4483862.jpg" alt="Fondo para la portada de colaboradores, de un almacen">
+        <section>
+            <img src="../assets/imagen colaborador.jpg" alt="Imagen de una mujer con fondo de almacen">
+            <h2>SÉ PARTE DE NUESTRO EQUIPO</h2>
+            <h3>Buscamos talentos como tú</h2>
+            <form action="/submit" method="post">
+                <label for="nombres y apellidos">Nombres y Apellidos:</label>
+                <input type="text" name="nombres" id="nombres">
+                
+                <label for="dni">DNI:</label>
+                <input type="number" name="dni" id="dni"> 
+
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad"> 
+                
+                <label for="correo electrónico">Correo Electrónico(Vigente)</label>
+                <input type="text" name="correo" id="correo">  
+
+                <label for="celular">Celular</label>
+                <input type="number" name="celular" id="celular"> 
+
+                <label for="seleccionar puesto disponible a solicitar">Seleccionar puesto disponible a solicitar</label>
+                 <select name="" id="">
+                   <option value="">Repartidor</option>
+                   <option value="">Vendedor</option>
+                   <option value="">Almacenero</option> 
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+     <!--se dividió el footer en dos partes por diseño de la pagina-->
+    <footer><!--contenido del pie de pagina-->
+        <form action="">
+            <label for="newsletter">¡Registrate para formar parte de esta hermosa comunidad!</label>
+            <input type="email">
+            <button>Registrar</button>
+        </form>
+    </footer>
+    <footer><!--contenido del pie de pagina-->
+        <form action="">
+            <label for="newsletter">Atención al cliente</label>
+            <ul>
+                <li>Reclamos</li>
+                <li>Preguntas Frecuentes</li>
+                <li>Cambios y devoluciones</li>
+            </ul>
+            <label for="newsletter">Información</label>
+             <ul>
+                <li>RUC:123456789</li>
+                <li>Razón Social:123456789</li>
+                <li>Dirección Legal</li>
+            </ul>
+            <input type="email">
+            <button>Registrar</button>
+        </form>
+        <img src="../assets/fb.jpg" alt="icono de facebook en fondo blanco">
+        <img src="../assets/ig.jpg" alt="icono de instagram en fondo blanco"> 
+        <img src="../assets/tiktok.jpg" alt="icono de tiktok en fondo blanco">
+        <button>Contacto</button>
+    </footer>
+</body>
+</html>

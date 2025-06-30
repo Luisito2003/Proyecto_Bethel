@@ -1,0 +1,43 @@
+/*selectores->etiqueta, id, clase*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+header{
+    background-color: #8C3D20;
+    color: #F0F0F0;
+}
+main{
+    background-color: #F0F0F0;
+}
+section{
+    list-style: none;
+}
+footer{
+    background-color: #8C3D20;
+    color: #F0F0F0;
+}
+h1{
+    font-family: "Noto Sans", sans-serif;
+}
+h2{
+    font-family: "Noto Sans", sans-serif;
+    color: #365B75;
+}
+h3{
+    font-family: "Noto Sans", sans-serif;
+    color: #365B75;
+}
+p{
+    font-family: "Noto Sans", sans-serif;
+    color: #0D0D0C;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #F0F0F0;
+    font-family: "Overpass", sans-serif;
+    text-decoration: none;
+}
+ul{
+    font-family: "Overpass", sans-serif;
+    text-decoration: none;
+}

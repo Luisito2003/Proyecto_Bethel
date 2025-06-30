@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header><!--Contenido de encabezado:titulo, navegacion, redes, se repite en todos los archivos-->
+       <h1>Corporación Bethel</h1>
+       <nav><!--Encierra el centro de navegacion principal de un archivo(menu de navegacion)-->
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="colaborador.html">Colaborador</a></li>
+            </ul>
+       </nav>
+    </header>
+
+    <main><!--Encierra el contenido prinicipal de un archivo html-->
+        <section><!--Para la sección de filtros-->
+            <h2>Filtro</h2>
+            <h3>Marcas</h3>
+            <div>
+                <label for="marcas">Marcas</label>
+                <select name="" id="">
+                   <option value="">P&G</option>
+                   <option value="">Orion</option>
+                   <option value="">Sapolio</option> 
+                </select>
+            </div>
+            <h3>Categoría</h3>
+            <div>
+                <label for="categoria">Marcas</label>
+                <select name="" id="">
+                   <option value="">Útiles de Aseo</option>
+                   <option value="">Útiles Escolares</option>
+                   <option value="">Mercería</option>
+                   <option value="">Ferretería</option> 
+                </select>
+            </div>
+        </section>
+        
+        <section><!--separa en temas el contenido especifico de un ar.html-->
+            <h2>Productos</h2>
+            <div>
+                <img src="../assets/betun.png" alt="betun para zapatos color negro">
+                <h3>Betún Santiago</h3>
+                <button>Agregar al carro</button>
+            </div>
+
+            <div>
+                <img src="../assets/desodorante.png" alt="desodorante en sachet rexona">
+                <h3>Desodorante Rexona</h3>
+                <button>Agregar al carro</button>
+            </div>
+
+            <h2>Para el Hogar</h2>
+            <div>
+                <img src="../assets/escobilla.png" alt="escobillla de plastico con asa">
+                <h3>Escobilla con asa</h3>
+                <button>Agregar al carro</button>
+            </div>
+        </section>
+    </main>
+    
+    <!--se dividió el footer en dos partes por diseño de la pagina-->
+    <footer><!--contenido del pie de pagina-->
+        <form action="">
+            <label for="newsletter">¡Registrate para formar parte de esta hermosa comunidad!</label>
+            <input type="email">
+            <button>Registrar</button>
+        </form>
+    </footer>
+    <footer><!--contenido del pie de pagina-->
+        <form action="">
+            <label for="newsletter">Atención al cliente</label>
+            <ul>
+                <li>Reclamos</li>
+                <li>Preguntas Frecuentes</li>
+                <li>Cambios y devoluciones</li>
+            </ul>
+            <label for="newsletter">Información</label>
+             <ul>
+                <li>RUC:123456789</li>
+                <li>Razón Social:123456789</li>
+                <li>Dirección Legal</li>
+            </ul>
+            <input type="email">
+            <button>Registrar</button>
+        </form>
+        <img src="../assets/fb.jpg" alt="icono de facebook en fondo blanco">
+        <img src="../assets/ig.jpg" alt="icono de instagram en fondo blanco"> 
+        <img src="../assets/tiktok.jpg" alt="icono de tiktok en fondo blanco">
+        <button>Contacto</button>
+    </footer>
+</body>
+</html>

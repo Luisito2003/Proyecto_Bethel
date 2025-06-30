@@ -21,34 +21,35 @@
        </nav>
     </header>
     
+    <!--MAIN-->
     <main><!--Encierra el contenido prinicipal de un archivo html-->
         <section>
             <h2>Conozca a Corporación Bethel</h2>
             <h3>¿Quiénes somos?</h3>
-            <img src="./assets/Fondo main bethel.jpg" alt="Fondo de la pantalla principal de corporacion bethel">
+            <img class="fondobethel" src="./assets/Fondo main bethel.jpg" alt="Fondo de la pantalla principal de corporacion bethel">
         </section>
         
         <section><!--separa en temas el contenido especifico de un ar.html-->
-            
-            <h2>Nuevos Productos</h2> 
-            <div>
-                <img src="./assets/Detergente orion.jpg" alt="Detergente en la marca orion en saco sobre fondo blanco">
-                <h3>Detergentes Orion</h3>
+            <h2 id="seccionnuevo">Nuevos Productos</h2> 
+             <img class="img" src="./assets/Detergente orion.jpg" alt="Detergente en la marca orion en saco sobre fondo blanco"> 
+   
+            <div class="textos">
+                <p>Detergentes Orion</h3>
                 <p>S/.30</p>
                 <button>Agregar al carro</button>
             </div>
 
-            <div>
-                <img src="./assets/plop.jpg" alt="Roceador insectisida en la marca plop fondo blanco">
-                <h3>Mata Todo PLop</h3>
+            <img class="img" src="./assets/plop.jpg" alt="Roceador insectisida en la marca plop fondo blanco">
+            <div class="textos">
+                <p>Mata Todo PLop</h3>
                 <p>S/.30</p>
                 <button>Agregar al carro</button>
             </div>
 
-            <h2>Para el Hogar</h2>
-            <div>
-                <img src="./assets/escobas.png" alt="Escobas de plastico en fondo blanco">
-                <h3>Escobas de plástico</h3>
+            <h2 id="seccionhogar">Para el Hogar</h2>
+            <img class="img" src="./assets/escobas.png" alt="Escobas de plastico en fondo blanco">
+            <div class="textos">
+                <p>Escobas de plástico</h3>
                 <p>S/.10</p>
                 <button>Agregar al carro</button>
             </div>
@@ -59,7 +60,7 @@
         <form action="">
             <label for="newsletter">¡Registrate para formar parte de esta hermosa comunidad!</label>
             <input type="email">
-            <button>Registrar</button>
+            <button class="buttomfooter">Registrar</button>
         </form>
     </footer>
     
@@ -79,12 +80,12 @@
                 <li>Dirección Legal</li>
             </ul>
             <input type="email">
-            <button>Registrar</button>
+            <button class="buttomfooter">Registrar</button>
         </form>
         <img src="./assets/fb.jpg" alt="icono de facebook en fondo blanco">
         <img src="./assets/ig.jpg" alt="icono de instagram en fondo blanco"> 
         <img src="./assets/tiktok.jpg" alt="icono de tiktok en fondo blanco">
-        <button>Contacto</button>
+        <button class="buttomfooter">Contacto</button>
     </footer>
 </body>
 </html>

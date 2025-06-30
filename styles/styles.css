@@ -41,3 +41,81 @@ ul{
     font-family: "Overpass", sans-serif;
     text-decoration: none;
 }
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*nuevos cambios con flex*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #283D3A;
+    color: #F0F0F0;
+    padding-right: 30px;
+    height: 60px;
+    flex-wrap: wrap;
+}
+
+/*seccion main*/
+main section .fondobethel{
+    width: 30%;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#seccionnuevo{
+    text-align: center;
+}
+#seccionhogar{
+    text-align: center;
+}
+main section .textos{
+    text-align: center;
+}
+button{
+    background-color: #033E8C;
+    color: whitesmoke;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 5px 3px 10px #033E8C;
+}
+
+main section .img{
+    width: 30%;
+    justify-content: center;
+}
+main .textonosotros{
+    text-align: center;
+}
+/*footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #283D3A;
+    color: #F0F0F0;
+    padding: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer .buttomfooter{
+    box-shadow: none;
+}
+footer img{
+    width: 4%;
+}

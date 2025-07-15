@@ -1,121 +1,152 @@
 /*selectores->etiqueta, id, clase*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
-header{
+
+header {
     background-color: #8C3D20;
     color: #F0F0F0;
 }
-main{
+
+main {
     background-color: #F0F0F0;
 }
-section{
+
+section {
     list-style: none;
 }
-footer{
+
+footer {
     background-color: #8C3D20;
     color: #F0F0F0;
 }
-h1{
+
+h1 {
     font-family: "Noto Sans", sans-serif;
 }
-h2{
-    font-family: "Noto Sans", sans-serif;
-    color: #365B75;
-}
-h3{
+
+h2 {
     font-family: "Noto Sans", sans-serif;
     color: #365B75;
 }
-p{
+
+h3 {
+    font-family: "Noto Sans", sans-serif;
+    color: #365B75;
+}
+
+p {
     font-family: "Noto Sans", sans-serif;
     color: #0D0D0C;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     color: #F0F0F0;
     font-family: "Overpass", sans-serif;
     text-decoration: none;
 }
-ul{
+
+ul {
     font-family: "Overpass", sans-serif;
     text-decoration: none;
 }
+
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*nuevos cambios con flex*/
-header{
+
+/*nuevos cambios con flex HEADER*/
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #283D3A;
     color: #F0F0F0;
     padding-right: 30px;
-    height: 60px;
     flex-wrap: wrap;
 }
 
-/*seccion main*/
-main section .fondobethel{
-    width: 30%;
-}
-header nav ul{
+header nav ul {
     list-style: none;
     display: flex;
     gap: 10px;
 }
-main{
-    display: flex;
-    align-items: center;
+
+/*seccion main - MOBILE*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 25%);
+    gap: 10px;
+    margin: 0px 10px;
+    align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
-}
-#seccionnuevo{
     text-align: center;
-}
-#seccionhogar{
-    text-align: center;
-}
-main section .textos{
-    text-align: center;
-}
-button{
-    background-color: #033E8C;
-    color: whitesmoke;
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 7px;
-    border: none;
-    box-shadow: 5px 3px 10px #033E8C;
 }
 
-main section .img{
-    width: 30%;
+main section .img-bethel, main section div .img-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .seccion-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 3fr);
+    gap: 5px;
+}
+/*main nosotros*/
+main .main-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 25%);
+    gap: 5px;
+}
+main section .iconos{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-column: span 1;
+}
+main section .presentacion{
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-column: span 1;
+}
+.img-icono{
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+}
+.img-valores{
+    width: 5%;
+    height: 5%;
+    object-fit: cover;
+}
+/*fin de main nosotros*/
+footer {
+    /*desktop*/
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 65px);
     justify-content: center;
-}
-main .textonosotros{
-    text-align: center;
-}
-/*footer*/
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-items: center;
     background-color: #283D3A;
     color: #F0F0F0;
-    padding: 15px;
-    margin-top: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 10px;
 }
-footer .buttomfooter{
+
+footer .footer-nvl1 {
+    grid-column: span 3;
+}
+
+footer .buttomfooter {
     box-shadow: none;
-}
-footer img{
-    width: 4%;
 }

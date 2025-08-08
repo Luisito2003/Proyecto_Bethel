@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="carrito.html">Carrito</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" class="active">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -32,11 +33,12 @@
     </section>
 
     <main>
-        <div class="mainContacto">
+        <div class="mainContacto" data-aos="fade-right">
             <div class="seccionPregunta">
-                <h3>¿Tienes alguna pregunta en mente?</h3>
-                <p>Estamos a tu disposición para resolver cualquier duda o inconveniente</p>
-                <p>Contáctanos</p>
+                <h3>¿Tienes alguna pregunta <br>
+                    en mente?</h3>
+                <p>Estamos a tu disposición para resolver <br>cualquier duda o inconveniente</p>
+                <button>Contáctanos</button>
             </div>
 
             <div class="seccionUbicacion">
@@ -46,39 +48,59 @@
 
                 <div>
                     <ul>
-                        <li>San Vicente</li>
-                        <li>Los Huertos de Cañete</li>
-                        <li>Ver en el mapa</li>
+                        <li class="Mayor">San Vicente</li>
+                        <li class="nota">Los Huertos de Cañete</li>
+                        <li class="nota">Ver en el mapa</li>
                         <li>+51 987654321</li>
                     </ul>
                 </div>
             </div>
         </div>
-
-        <div class="mainMitad">
-            
+        <div class="mainMitad" data-aos="fade-right">
             <div class="mainInfo">
                 <h4>Estamos listos para ayudarte</h4>
-                <p>Te brindamos todos los medios de comunicación <br>
-                    para responder cualquier pregunta</p>
+                <p>Te brindamos todos los medios de comunicación <br>para responder cualquier pregunta</p>
+
+                <ul class="contactoLista">
+                    <li>
+                        <p class="etiqueta">Teléfono:</p>
+                        <p class="valor">+51 987654321</p>
+                    </li>
+                    <li>
+                        <p class="etiqueta">Email:</p>
+                        <p class="valor">contacto@bethel.com</p>
+                    </li>
+                    <li>
+                        <p class="etiqueta">Ubicación:</p>
+                        <p class="valor">Los Huertos de Cañete</p>
+                    </li>
+                    <li>
+                        <p class="etiqueta">Mapa:</p>
+                        <p class="valor"><a href="#">Ver en el mapa</a></p>
+                    </li>
+                </ul>
             </div>
 
-            <div class="mainFormulario">
+            <div class="mainFormulario" data-aos="fade-right">
                 <form>
-                    <p>DÉJANOS TUS CONSULTAS</p>
+                    <p class="tituloFormulario">DÉJANOS TUS CONSULTAS</p>
+
                     <div class="mb-3">
-                        <label for="exampleInputName1" class="form-label">Ingresa tu nombre</label>
-                        <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">La información que nos ofreces no será compartida*</div>
+                        <label for="nombre" class="form-label">Ingresa tu nombre</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
                     </div>
+
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Ingres tu correo electrónico</label>
-                        <input type="Email" class="form-control" id="exampleInputEmail1">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" id="correo" class="form-control" placeholder="Tu correo">
                     </div>
+
                     <div class="mb-3">
-                        <label for="exampleTextarea" class="form-label">Escribe tu mensaje</label>
-                        <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Déjanos tu consulta aquí"></textarea>
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-control" rows="4"
+                            placeholder="Déjanos tu mensaje"></textarea>
                     </div>
+
                     <button type="submit" class="btn btn-primary">Enviar mensaje</button>
                 </form>
             </div>
@@ -115,7 +137,7 @@
         </div>
 
         <div class="footer-nvl4">
-               <div class="redes-row">
+            <div class="redes-row">
                 <!--ICONO FACEBOOK-->
                 <div class="fb">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -152,6 +174,10 @@
             <button class="buttomfooter">Contacto</button>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

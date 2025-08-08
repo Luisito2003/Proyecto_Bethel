@@ -1,0 +1,635 @@
+//varibales
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+
+/*mq tablet*/
+@media screen and (max-width: 768px) {
+    header {
+        .img-logo {
+            width: 150px;
+        }
+    }
+
+    //-----------------------index
+    main {
+        .seccionProductos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+        }
+    }
+
+    //----------------------Productos
+    .nuevosProductos {
+        .menu {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: start;
+
+            .container-fluid {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .menu .navbar-nav {
+                    flex-direction: row;
+                    gap: 20px;
+
+                    .nav-item {
+                        text-align: left;
+                        width: auto;
+
+                        .menu .dropdown-menu {
+                            width: auto;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //--------------------------CARRITO
+    .Carrito {
+        justify-content: center;
+        grid-template-columns: 380px 430px;
+        gap: 2px;
+        min-height: 50vh;
+
+        .metodos-pago {
+            gap: 10px;
+            width: 20rem;
+
+            .metodo {
+                width: 400px;
+                height: 200px;
+                text-align: center;
+
+                button {
+                    font-weight: 500;
+                    border: none;
+                    border-radius: 8px;
+                    padding: 10px 28px;
+                    font-size: 1.1rem;
+                    margin-bottom: 14px;
+                }
+
+                .formulario {
+                    .textcobro {
+                        padding: 14px 16px;
+                        background: #f6f7f8;
+                        transition: border .14s, box-shadow .14s;
+                        width: 15rem;
+                        max-width: 100%;
+                        box-sizing: border-box;
+                        font-size: 15px;
+                        padding: 5px 4px;
+                    }
+                }
+            }
+        }
+
+        .imagen-pago {
+            height: 400px;
+
+            img {
+                width: 300px;
+                border-radius: 24px;
+                box-shadow: 0 8px 36px #0001;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    //--------------------------NOSOTROS
+    .valores {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.2rem;
+        text-shadow: #0d0d0d;
+
+        .seccionValores {
+            @include flex2;
+            gap: 60px;
+
+            div {
+                img {
+                    max-height: 80px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .textonosotros {
+        padding: 5px 2px 2px 2px;
+
+        .contenido {
+            flex: 1;
+        }
+
+        h2 {
+            width: 100px;
+            height: 50px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 22px;
+            color: #2e5e7d;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            width: 30rem;
+        }
+
+        h2,
+        p {
+            margin-left: 12px;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 5px 0px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+        }
+
+        img {
+            margin-right: 10px;
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    //--------------------------CONTACTO
+
+    .mainContacto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 90px;
+        justify-content: center;
+        gap: 50px;
+
+        .seccionPregunta {
+            h3 {
+                font-family: $texto;
+                font-size: 2.3rem;
+                text-align: left;
+                color: linear-gradient(#011126, rgba(3, 50, 65, 0.871) 80%);
+            }
+
+            p {
+                font-family: $texto;
+                font-size: 1.2rem;
+                text-align: left;
+            }
+
+            button {
+                width: 150px;
+                height: 50px;
+            }
+        }
+    }
+
+    .mainMitad {
+        @include flex;
+        flex-direction: column;
+        gap: 150px;
+        justify-content: center;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #dfe6e8;
+
+        .mainInfo {
+            flex: 1;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 50rem;
+            background-color: white;
+            border: transparent;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
+            height: 40rem;
+            text-align: center;
+
+            h4 {
+                font-size: 60px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 24px;
+                margin-bottom: 10px;
+                color: rgba(0, 0, 0, 0.455);
+                padding-bottom: 15px;
+            }
+
+            .contactoLista {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px 80px;
+                list-style: none;
+                padding: 0;
+                margin: 40px auto;
+                max-width: 700px;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1px;
+
+                    .etiqueta {
+                        font-weight: 500;
+                        color: #000000;
+                        font-size: 1.4rem;
+                    }
+
+                    .valor {
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        color: #726c6c;
+                    }
+                }
+
+                a {
+                    color: #007bff;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .mainFormulario {
+            flex: 1;
+            max-width: 30rem;
+            background-color: transparent;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
+
+            .tituloFormulario {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #011126;
+                font-family: $texto;
+            }
+
+            .form-label {
+                font-weight: 500;
+            }
+
+            .btn {
+                margin-top: 10px;
+                width: 100%;
+                background: linear-gradient(120deg, #0c1720, rgba(6, 41, 52, 0.871) 90%);
+            }
+        }
+    }
+}
+
+/*mq Mobile*/
+@media screen and (max-width: 480px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-logo {
+                text-align: center;
+                width: 150px;
+            }
+        }
+
+        nav {
+            ul {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .footer-nvl1 {
+            margin-bottom: 18px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                input[type="email"] {
+                    border: none;
+                    border-radius: 5px;
+                    padding: 8px 12px;
+                    font-size: 15px;
+                    outline: none;
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    main {
+        .mainSuperior {
+            .maintextoSuperior {
+                align-items: end;
+                justify-content: end;
+                align-content: end;
+                text-align: left;
+
+
+            }
+        }
+
+        .seccionProductos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+        }
+    }
+
+    //------------------------PRODUCTOS{
+    .ayudaProducto {
+        position: relative;
+        height: 90vh;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+
+        .textoProducto {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h2 {
+                font-size: 2rem;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1rem;
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+
+    .nuevosProductos {
+        display: flex;
+        flex-direction: column;
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 300px;
+            width: 500px;
+            gap: 20px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                .navbar-brand {
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: #222;
+                    margin-bottom: 20px;
+                }
+            }
+
+            button {
+                display: flex;
+            }
+
+            .collapse.navbar-collapse {
+                .navbar-nav {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                    width: 100px;
+                    padding-left: 10px;
+                    margin-bottom: 2rem;
+
+                    .nav-item {
+                        width: 100%;
+                        margin-bottom: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .seccionNuevo {
+            padding-left: 20px;
+            padding-right: 40px;
+            width: 380px;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .items {
+                display: grid;
+                grid-template-columns: repeat(1, minmax(220px, 1fr));
+                grid-gap: 32px;
+                padding: 16px 15px;
+            }
+        }
+    }
+
+    //------------------------CARRITO
+    .ayudaCompra {
+        position: relative;
+        height: 90vh;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+
+        .textoCompra {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h2 {
+                font-size: 2.5rem;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1.5rem;
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+
+    .Carrito {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    //------------------------NOSOTROS
+    .ayudaNosotros {
+        position: relative;
+        height: 90vh;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+
+        .textoNosotros {
+
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h2 {
+                font-size: 2rem;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1rem;
+                width: 300px;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .valores {
+        .seccionValores {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    .textonosotros {
+        display: flex;
+        flex-direction: column;
+
+        .contenido {
+            width: 400px;
+            margin: 0px;
+            padding: 0;
+
+            p {
+                width: 370px;
+            }
+        }
+
+        .imagen {
+            width: 300px;
+        }
+    }
+
+    //------------------------CONTACTO
+    .ayudaContacto {
+        position: relative;
+        height: 90vh;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+
+        .textoContacto {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h2 {
+                font-size: 2rem;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1rem;
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+
+    .mainContacto {
+        .seccionPregunta {
+            width: 300px;
+        }
+
+        .seccionUbicacion {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding-bottom: 300px;
+
+            div {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .mainMitad{
+        width: 380px;
+        .mainInfo{
+            .contactoLista{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
